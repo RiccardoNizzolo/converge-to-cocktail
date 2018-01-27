@@ -1,11 +1,10 @@
 from bs4 import BeautifulSoup
 import requests
-import codecs
 
-with codecs.open('cocktails_data.csv', 'w', encoding='utf-8') as file:
+with open('cocktails_data.csv', 'w+') as file:
     num_cocktails = 0
 
-    for i in range(300):
+    for i in range(1000):
         try:
             html = requests.get('http://drinkboy.com/Cocktails/Recipe.aspx?itemid={}'.format(i)).text
 
