@@ -54,4 +54,5 @@ def get_ingredients(line):
 
 def get_ingredientsline_grams(line):
     ingredients = get_ingredients(line)
-    return ','.join([ingr_name + ':' + str(ingr_amount) for ingr_name, ingr_amount in ingredients])   
+    return ','.join([ingr_name + ':' + str(ingr_amount) for ingr_name, ingr_amount in ingredients])
+
